@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 number = 98
-print(f'{98} Bettery stret\n')
+print(f'{98} Bettery stret')
