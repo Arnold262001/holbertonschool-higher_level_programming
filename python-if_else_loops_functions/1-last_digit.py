@@ -12,7 +12,5 @@ if (lastDigit < 6) & (lastDigit != 0):
     lastTxt = "and is less than 6 and not 0"
 elif lastDigit > 5:
     lastTxt = "and is greater than 5"
-elif lastDigit == 0:
-    pass
 
 print(f"{START_TXT} {number} is {lastDigit} {lastTxt}")
