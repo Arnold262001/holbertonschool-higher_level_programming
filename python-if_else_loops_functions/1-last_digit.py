@@ -6,7 +6,7 @@ START_TXT = "Last digit of"
 lastTxt = ''
 
 if number < 0:
-   lastDigit = lastDigit * -1
+    lastDigit = lastDigit * -1
 
 if (lastDigit < 6) & (lastDigit != 0):
     lastTxt = "and is less than 6 and not 0"
