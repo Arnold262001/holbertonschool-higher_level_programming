@@ -5,4 +5,4 @@ for i in range(90, 64, -1):
     if number % 2 == 0:
         number += 32
 
-    print(chr(number), end='')
+    print("{0}".format(chr(number)), end='')
