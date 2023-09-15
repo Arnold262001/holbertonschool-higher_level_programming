@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 def uppercase(str):
     o = 0
-    
+
+    if str == "":
+        str = ' '
+
     for i in str:
         number = int(ord(i))
 
