@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def uppercase(str):
     o = 0
-    number = 0
+    number = ''
 
     if str != "":
         for i in str:
