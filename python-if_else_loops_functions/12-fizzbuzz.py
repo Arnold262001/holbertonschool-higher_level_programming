@@ -13,6 +13,6 @@ def fizzbuzz():
         else:
             str = i
     
-        tmp = "{0} {1}".format(tmp, str)
+        tmp = "{0} {1} ".format(tmp, str)
 
     print(tmp)
