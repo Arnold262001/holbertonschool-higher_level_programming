@@ -3,7 +3,7 @@ def uppercase(str):
     number = 0
     lenStr = len(str)
 
-    if str != 0:
+    if lenStr != 0:
         for i in range(lenStr):
             number = ord(str[i])
 
