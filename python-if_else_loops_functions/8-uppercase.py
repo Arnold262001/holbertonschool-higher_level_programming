@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def uppercase(str):
-    number = ""
+    number = None
     lenStr = len(str)
 
     for i in range(lenStr):
