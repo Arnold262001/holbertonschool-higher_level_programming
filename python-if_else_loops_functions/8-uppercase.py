@@ -12,5 +12,5 @@ def uppercase(str):
             if i < lenStr - 1:
                 print("{0}".format(chr(number)), end='')
     else:
-        number = 32
+        number = 0
     print("{0}".format(chr(number)))
