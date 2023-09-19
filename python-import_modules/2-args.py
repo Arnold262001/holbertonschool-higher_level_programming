@@ -9,7 +9,7 @@ if __name__ == '__main__':
         strArgs = 'arguments.'
     elif lenArgc == 1:
         strArgs = 'argument:'
-        
+
     print("{0} {1}".format(lenArgc, strArgs))
 
     for i in range(1, lenArgc + 1):
