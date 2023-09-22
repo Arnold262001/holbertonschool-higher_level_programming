@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
     for i in matrix:
-        strTmp = ''
+        u = 1
         for o in i:
-            strTmp = strTmp + str(o) + ' '
-        print("{}".format(strTmp[:-1]))
+            if u < len(i):
+                print("{} ".format(o), end='')
+            else:
+                print("{}".format(o))
+            u += 1
