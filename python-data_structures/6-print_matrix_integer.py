@@ -3,7 +3,7 @@ def print_matrix_integer(matrix=[[]]):
     if matrix == [[]]:
         print()
         exit()
-        
+
     for i in matrix:
         u = 1
         for o in i:
