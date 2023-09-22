@@ -9,3 +9,5 @@ def print_matrix_integer(matrix=[[]]):
                 else:
                     print("{}".format(o))
                 u += 1
+    else:
+        print()
