@@ -2,10 +2,5 @@
 def divisible_by_2(my_list=[]):
       n = []
       if len(my_list) > 0:
-            for i, e in enumerate(my_list):
-                  if type(e) == int:
-                        if e % 2 == 0:
-                              n.insert(i, True)
-                        else:
-                              n.insert(i, False)
+            n = [True if i % 2 == 0 else False for i in my_list]
       return n
