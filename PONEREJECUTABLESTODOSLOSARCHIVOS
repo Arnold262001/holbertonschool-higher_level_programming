@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Ruta al repositorio
+repo_path="/root/holbertonschool-higher_level_programming"
+
+# Recorre todos los archivos en cada directorio del repositorio
+find "$repo_path" -type f ! -name 'README.md' -exec chmod +rx {} \;
+
