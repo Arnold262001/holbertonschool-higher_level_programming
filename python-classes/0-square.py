@@ -7,3 +7,6 @@ class Square:
     Esta clase define un cuadrado
     """
     pass
+    """
+    Métodos y atributos en construcción.
+    """
