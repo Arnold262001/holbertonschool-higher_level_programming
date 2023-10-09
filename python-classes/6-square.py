@@ -19,10 +19,9 @@ class Square:
             position (tuple): Las coordenadas de impresión del cuadrado.
         """
 
-        if type(position[0]) != int or type(position[1]) != int:
+        if type(position[0]) != int or type(position[1]) != int or len(position) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
-
-        if len(position) != 2:
+        else:
             raise TypeError("position must be a tuple of 2 positive integers")
 
         self.__position = position
@@ -93,10 +92,7 @@ class Square:
         """
         Esta función configura el valor de __position
         """
-        if type(value[0]) != int or type(value[1]) != int:
+        if type(value[0]) != int or type(value[1]) != int or len(value) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
-
-        if len(value) != 2:
-            raise TypeError("position must be a tuple of 2 positive integers")
-
-        self.__position = value
+        else:
+            self.__position = value
