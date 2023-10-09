@@ -32,3 +32,8 @@ TypeError: b must be an integer
 
 >>> add_integer(-4)
 94
+
+>>> add_integer(None)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
