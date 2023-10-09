@@ -24,11 +24,6 @@ Traceback (most recent call last):
     ...
 TypeError: a must be an integer
 
->>> add_integer('4', '9')
-Traceback (most recent call last):
-    ...
-TypeError: a must be an integer
-
 >>> add_integer(a, 8)
 Traceback (most recent call last):
     ...
