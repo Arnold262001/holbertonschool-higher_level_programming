@@ -16,7 +16,7 @@ class Square:
 
         Args:
             size (int o float): La longitud de los lados del square.
-            position (tuple): Las coordenadas de impresión del cuadrado.
+            position (int, int): Las coordenadas de impresión del cuadrado.
         """
 
         if type(position[0]) != int or type(position[1]) != int:
@@ -47,20 +47,24 @@ class Square:
         Este método imprime un cuadrado en stdout usando #,
         siempre y cuando __size > 0.
         """
+
         if self.__size == 0:
             print()
         else:
-            for o in range(self.__position[1]):
-                print()
+            if self.__position[1] > 0:
+                for o in range(self.__position[1]):
+                    print()
+
             for i in range(self.__size):
                 print(f"{' ' * self.__position[0]}{'#' * self.__size}")
 
     @property
     def size(self):
-        """Esta propiedad devuelve el __size
+        """
+        Esta propiedad devuelve el __size
 
-            Returns:
-                retorna el __size.
+        Returns:
+            retorna el __size.
         """
         return self.__size
 
@@ -81,8 +85,8 @@ class Square:
         """
         Esta propiedad devuelve las coordenadas.
 
-            Returns:
-                retorna los puntos donde se imprimirá
+        Returns:
+            retorna los puntos donde se imprimirá
         """
         return self.__position
 
