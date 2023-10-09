@@ -10,4 +10,11 @@ class Square:
     """
 
     def __init__(self, size):
+        """
+        Este es el constructor de la clase Square.
+        Inicializa un nuevo objeto Square con el size recibido.
+
+        Args:
+            size (int o float): La longitud de los lados del square.
+        """
         self._size = size
