@@ -60,10 +60,11 @@ class Square:
 
     @property
     def size(self):
-        """Esta propiedad devuelve el __size
+        """
+        Esta propiedad devuelve el __size
 
-            Returns:
-                retorna el __size.
+        Returns:
+            retorna el __size.
         """
         return self.__size
 
@@ -84,8 +85,8 @@ class Square:
         """
         Esta propiedad devuelve las coordenadas.
 
-            Returns:
-                retorna los puntos donde se imprimirá
+        Returns:
+            retorna los puntos donde se imprimirá
         """
         return self.__position
 
