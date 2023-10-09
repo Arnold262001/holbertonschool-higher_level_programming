@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 """
-Este módulo contiene operaciones matemáticas
+Este módulo contiene operaciones matemáticas.
+
+Example:
+    add_integer(4, 9)
 """
 
 
@@ -11,6 +14,9 @@ def add_integer(a, b=98):
     Args:
         a (int): Primer entero
         b (int): Segundo entero(valor por defecto 98)
+
+    Returns:
+        int: The return a + b
     """
 
     if type(a) != int and type(a) != float:
@@ -19,4 +25,7 @@ def add_integer(a, b=98):
     if type(b) != int and type(b) != float:
         raise TypeError("b must be an integer")
 
-    return int(a) + int(b)
+    a = int(a) if type(a) == float else a
+    b = int(b) if type(b) == float else b
+
+    return a + b
