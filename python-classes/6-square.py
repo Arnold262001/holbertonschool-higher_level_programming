@@ -16,7 +16,7 @@ class Square:
 
         Args:
             size (int o float): La longitud de los lados del square.
-            position (tuple): Las coordenadas de impresión del cuadrado.
+            position (int, int): Las coordenadas de impresión del cuadrado.
         """
 
         if type(position[0]) != int or type(position[1]) != int:
