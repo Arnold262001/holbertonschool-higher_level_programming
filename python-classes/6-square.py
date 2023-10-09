@@ -47,11 +47,14 @@ class Square:
         Este método imprime un cuadrado en stdout usando #,
         siempre y cuando __size > 0.
         """
+
         if self.__size == 0:
             print()
         else:
-            for o in range(self.__position[1]):
-                print()
+            if self.__position[1] > 0:
+                for o in range(self.__position[1]):
+                    print()
+
             for i in range(self.__size):
                 print(f"{' ' * self.__position[0]}{'#' * self.__size}")
 
