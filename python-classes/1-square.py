@@ -17,4 +17,4 @@ class Square:
         Args:
             size (int o float): La longitud de los lados del square.
         """
-        self._size = size
+        self.__size = size
