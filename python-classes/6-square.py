@@ -16,7 +16,9 @@ class Square:
 
         Args:
             size (int o float): La longitud de los lados del square.
+            position (tuple): Las coordenadas de impresión del cuadrado.
         """
+        
         self.__position = position
         if type(size) != int:
             raise TypeError("size must be an integer")
