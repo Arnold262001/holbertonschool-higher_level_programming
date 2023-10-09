@@ -13,10 +13,10 @@ def add_integer(a, b=98):
         b (int): Segundo entero(valor por defecto 98)
     """
 
-    if (type(a) != int or type(a) != float) or a is None:
+    if (type(a) != int and type(a) != float) and a is None:
         raise TypeError("a must be an integer")
 
-    if (type(b) != int or type(b) != float) or b is None:
+    if type(b) != int and type(b) != float:
         raise TypeError("b must be an integer")
 
     return int(a) + int(b)
