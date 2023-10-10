@@ -1,19 +1,22 @@
 #!/usr/bin/python3
-"""Este modulo define una clase"""
+"""
+Este modulo define una clase
+"""
 
 
 class Rectangle:
-    """Esta clase define un rectángulo"""
+    """
+    Esta clase define un rectángulo
+    """
 
     def __init__(self, width=0, height=0):
         """
         Método constructor, recibe el ancho y alto
 
         Args:
-            width(int): Ancho del rectángulo.
-            height(int): Alto del rectángulo
+            width (int): Ancho del rectángulo.
+            height (int): Alto del rectángulo
         """
-
         self.__height = height
         self.__width = width
 
@@ -25,7 +28,6 @@ class Rectangle:
         Returns:
             int: Retorna el ancho(height)
         """
-
         return self.__width
 
     @width.setter
@@ -36,7 +38,6 @@ class Rectangle:
         Args:
             value (int): Este valor configura el ancho del rectágulo.
         """
-
         if type(value) != int:
             raise TypeError("width must be an integer")
 
@@ -52,7 +53,6 @@ class Rectangle:
         Returns:
             int: Retorna el alto(height)
         """
-
         return self.__height
 
     @height.setter
@@ -63,7 +63,6 @@ class Rectangle:
         Args:
             value (int): Este valor configura el alto del rectángulo.
         """
-
         if type(value) != int:
             raise TypeError("height must be an integer")
 
