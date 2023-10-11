@@ -63,10 +63,10 @@ class Square:
         """
         if type(value) != int:
             raise TypeError("size must be an integer")
-        elif value < 0:
+
+        if value < 0:
             raise ValueError("size must be >= 0")
-        else:
-            self.__size = value
+        self.__size = value
 
     @property
     def position(self):
@@ -83,9 +83,10 @@ class Square:
         """
         Esta función configura el valor de __position
         """
+        if len(value) != 2:
+            raise TypeError("position must be a tuple of 2 positive integers")
+
         if type(value[0]) != int or type(value[1]) != int:
             raise TypeError("position must be a tuple of 2 positive integers")
-        elif len(value) != 2:
-            raise TypeError("position must be a tuple of 2 positive integers")
-        else:
-            self.__position = value
+
+        self.__position = value
