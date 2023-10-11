@@ -83,7 +83,6 @@ class Square:
         """
         Esta función configura el valor de __position
         """
-        
         if type(value) != tuple:
             raise TypeError("position must be a tuple of 2 positive integers")
 
