@@ -8,7 +8,7 @@ def safe_print_list_integers(my_list=[], x=0):
             if type(e) == int:
                 print("{:d}".format(e), end='')
                 n_element += 1
-    except IndexError as e:
+    except (IndexError, ValueError):
         continue
     print()
     return n_element
