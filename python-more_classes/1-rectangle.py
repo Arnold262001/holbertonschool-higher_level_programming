@@ -1,23 +1,23 @@
 #!/usr/bin/python3
-"""Defines a Rectangle class."""
+"""Este módulo define la clase Rectangle."""
 
 
 class Rectangle:
-    """Represent a rectangle."""
+    """Esta clase expone un Rectangle."""
 
     def __init__(self, width=0, height=0):
-        """Initialize a new Rectangle.
+        """Método constructor, tiene 2 parámetros opcionales.
 
         Args:
-            width (int): The width of the new rectangle.
-            height (int): The height of the new rectangle.
+            width (int): El ancho del Rectangle.
+            height (int): El alto del Rectangle.
         """
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """Get/set the width of the rectangle."""
+        """Este método retorna el ancho de nuestro Rectangle"""
         return self.__width
 
     @width.setter
@@ -30,7 +30,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """Get/set the height of the rectangle."""
+        """Este método retorna el alto de  nuestro Rectangle."""
         return self.__height
 
     @height.setter
