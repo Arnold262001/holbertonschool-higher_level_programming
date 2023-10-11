@@ -9,6 +9,6 @@ def safe_print_list_integers(my_list=[], x=0):
                 print("{:d}".format(e), end='')
                 n_element += 1
     except IndexError as e:
-        print(e)
+        continue
     print()
     return n_element
