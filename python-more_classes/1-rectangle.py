@@ -38,7 +38,7 @@ class Rectangle:
         Args:
             value (int): Este valor configura el ancho del rectágulo.
         """
-        if type(value) != int:
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
 
         if value < 0:
@@ -63,9 +63,10 @@ class Rectangle:
         Args:
             value (int): Este valor configura el alto del rectángulo.
         """
-        if type(value) != int:
+        if not isinstance(value, int):
             raise TypeError("height must be an integer")
 
         if value < 0:
             raise ValueError("height must be >= 0")
+
         self.__height = value
