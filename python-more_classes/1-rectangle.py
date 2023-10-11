@@ -1,12 +1,16 @@
 #!/usr/bin/python3
 """
 Este modulo define una clase
+
+
 """
 
 
 class Rectangle:
     """
     Esta clase define un rectángulo
+
+
     """
 
     def __init__(self, width=0, height=0):
@@ -38,7 +42,7 @@ class Rectangle:
         Args:
             value (int): Este valor configura el ancho del rectágulo.
 
-        Raise:
+        Raises:
             TypeError: type(value) != int
             ValueError: value < 0
 
@@ -68,7 +72,7 @@ class Rectangle:
         Args:
             value (int): Este valor configura el alto del rectángulo.
 
-        Raise:
+        Raises:
             TypeError: type(value) != int
             ValueError: value < 0
 
