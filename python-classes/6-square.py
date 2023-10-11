@@ -18,21 +18,8 @@ class Square:
             size (int o float): La longitud de los lados del square.
             position (int, int): Las coordenadas de impresión del cuadrado.
         """
-
-        if type(position[0]) != int or type(position[1]) != int:
-            raise TypeError("position must be a tuple of 2 positive integers")
-
-        if len(position) != 2:
-            raise TypeError("position must be a tuple of 2 positive integers")
-
-        self.__position = position
-
-        if type(size) != int:
-            raise TypeError("size must be an integer")    
-
-        if size < 0:
-            raise ValueError("size must be >= 0")
-        self.__size = size
+        self.size = size
+        self.position = position
 
     def area(self):
         """
