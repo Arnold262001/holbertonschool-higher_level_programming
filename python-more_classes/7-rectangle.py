@@ -110,9 +110,8 @@ class Rectangle:
             a = self.__height + 1
             b = self.__width
             str_repr = ''.join(
-                [f"{Rectangle.print_symbol * b}\n" for i in range(a) if i])
-            # return str_repr[:len(str_repr) - 1]
-            return str_repr
+                [f"{str(self.print_symbol) * b}\n" for i in range(a) if i])
+            return str_repr[:len(str_repr) - 1]
 
     def __repr__(self):
         """
