@@ -172,6 +172,8 @@ class Rectangle:
         Returns:
             new_rectangle (Rectangle): Una instancia de Rectangle.
         """
-        new_rect = Rectangle(size, size)
+        new_rect = Rectangle()
+        new_rect.height = size
+        new_rect.width = size
 
         return new_rect
