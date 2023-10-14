@@ -172,4 +172,4 @@ class Rectangle:
         Returns:
             new_rectangle (Rectangle): Una instancia de Rectangle.
         """
-        return (cls(size, size))
+        return cls(size, size)
