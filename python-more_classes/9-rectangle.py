@@ -172,5 +172,4 @@ class Rectangle:
         Returns:
             new_rectangle (Rectangle): Una instancia de Rectangle.
         """
-        if type(size) == int:
-            return Rectangle(width=size, height=size)
+        return cls(width=size, height=size)
