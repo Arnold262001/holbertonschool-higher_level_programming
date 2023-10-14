@@ -173,4 +173,4 @@ class Rectangle:
             new_rectangle (Rectangle): Una instancia de Rectangle.
         """
 
-        return Rectangle(size, size)
+        return Rectangle(width=size, height=size)
