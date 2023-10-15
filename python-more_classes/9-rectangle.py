@@ -64,9 +64,10 @@ class Rectangle:
         Este método crea una nueva instancia de la clase Rectangle
 
         Args:
-            size (int): Este valor se asignará como parámetros para nuestra instancia.
+            size (int): Este valor se asignará como parámetros para 
+                        nuestra instancia.
         """
-        return cls(height=size, width=size)
+        return cls(size, size)
 
     @property
     def width(self):
