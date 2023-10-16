@@ -1,5 +1,4 @@
 #!/usr/bin/python3
 def magic_string():
     magic_string.c = magic_string.c + 1 if hasattr(magic_string, "c") else 1
-    new_str = "".join(["BestSchool, " for i in range(magic_string.c) if i])
-    return new_str[:len(new_str)-2]
+    return "".join(["BestSchool, " for i in range(1, magic_string.c + 1) if i])[:-2]
