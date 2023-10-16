@@ -64,7 +64,7 @@ class Rectangle:
         Este método crea una nueva instancia de la clase Rectangle
 
         Args:
-            size (int): Este valor se asignará como parámetros para 
+            size (int): Este valor se asignará como parámetros para
                         nuestra instancia.
         """
         return cls(size, size)
