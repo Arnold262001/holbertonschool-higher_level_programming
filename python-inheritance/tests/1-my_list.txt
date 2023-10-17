@@ -72,7 +72,7 @@
 
 # Comprobar el método __repr__
 >>> repr(ml)
-"['hola', 'mundo', 'python', 'bing', 'ai']"
+'['hola', 'mundo', 'python', 'bing', 'ai']'
 
 # Crear una lista con elementos mixtos (números y strings)
 >>> ml = MyList([3, 2, 1, 'tres', 'dos', 'uno'])
@@ -87,7 +87,7 @@ TypeError: '<' not supported between instances of 'str' and 'int'
 
 # Comprobar el método __repr__
 >>> repr(ml)
-"[3, 2, 1, 'tres', 'dos', 'uno']"
+'[3, 2, 1, 'tres', 'dos', 'uno']'
 
 # Crear una lista con listas anidadas
 >>> ml = MyList([3, [1, 2], 'hola'])
@@ -102,7 +102,7 @@ TypeError: '<' not supported between instances of 'list' and 'int'
 
 # Comprobar el método __repr__
 >>> repr(ml)
-"[3, [1, 2], 'hola']"
+'[3, [1, 2], 'hola']'
 
 # Crear una lista con listas anidadas de números
 >>> ml = MyList([[3, 2, 1], [4, 5, 6]])
@@ -119,4 +119,4 @@ TypeError: '<' not supported between instances of 'list' and 'int'
 
 # Comprobar el método __repr__
 >>> repr(ml)
-"[[3, 2, 1], [4, 5, 6]]"
+'[[3, 2, 1], [4, 5, 6]]'
