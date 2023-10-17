@@ -1,1 +1,24 @@
 >>> MyList = __import__('1-my_list').MyList
+
+>>> ml = MyList()
+>>> ml
+[]
+
+# Añadir elementos a la lista
+>>> ml.append(3)
+>>> ml.append(1)
+>>> ml.append(2)
+>>> ml
+[3, 1, 2]
+
+# Ordenar e imprimir la lista
+>>> ml.print_sorted()
+[1, 2, 3]
+
+# Comprobar que la lista original no se modificó después de ordenarla
+>>> ml
+[3, 1, 2]
+
+# Comprobar el método __repr__
+>>> repr(ml)
+'[3, 1, 2]'
