@@ -1,4 +1,4 @@
-# #!/usr/bin/python3
+#!/usr/bin/python3
 """
 Este módulo define una clase que hereda de list
 """
