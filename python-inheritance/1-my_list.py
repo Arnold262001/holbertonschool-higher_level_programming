@@ -18,7 +18,10 @@ class MyList(list):
 
     def __repr__(self):
         """
-        Este métodod regresa un string, representación de lista
+        Este métodod regresa un string, representación de lista.
+
+        Returns:
+            list (list): Regresa la representación de la lista.
         """
 
         return f"{list(self)}"
