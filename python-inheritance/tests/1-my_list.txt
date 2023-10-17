@@ -103,20 +103,3 @@ TypeError: '<' not supported between instances of 'list' and 'int'
 # Comprobar el método __repr__
 >>> repr(ml)
 '[3, [1, 2], 'hola']'
-
-# Crear una lista con listas anidadas de números
->>> ml = MyList([[3, 2, 1], [4, 5, 6]])
->>> ml
-[[3, 2, 1], [4, 5, 6]]
-
-# Ordenar e imprimir la lista
->>> ml.print_sorted()
-[[3, 2, 1], [4, 5, 6]]
-
-# Comprobar que la lista original no se modificó después de ordenarla
->>> ml
-[[3, 2, 1], [4, 5, 6]]
-
-# Comprobar el método __repr__
->>> repr(ml)
-'[[3, 2, 1], [4, 5, 6]]'
