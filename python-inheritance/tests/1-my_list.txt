@@ -82,6 +82,8 @@
 
 # Ordenar e imprimir la lista (esto debería dar un error porque no se pueden ordenar números y strings juntos)
 >>> ml.print_sorted()
+Traceback (most recent call last):
+    ...
 TypeError: '<' not supported between instances of 'str' and 'int'
 
 # Comprobar el método __repr__
