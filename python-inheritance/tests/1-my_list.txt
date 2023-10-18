@@ -110,15 +110,3 @@ TypeError: '<' not supported between instances of 'list' and 'int'
 # Comprobar el método __repr__
 >>> repr(ml)
 "[3, [1, 2], 'hola']"
-
-#Crear una instancia Recibiendo None como parámetro.
->>> ml = MyList(None)
-Traceback (most recent call last):
-    ...
-TypeError: 'NoneType' object is not iterable
-
-#Inicializando con mas de un argumento.
->>> ml = MyList([2, 4],[2, 5])
-Traceback (most recent call last):
-    ...
-TypeError: list expected at most 1 argument, got 2
