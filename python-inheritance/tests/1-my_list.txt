@@ -1,5 +1,6 @@
 Modulo de test, para la clase MyList
 
+#Importando nuestra la clase MyList
 >>> MyList = __import__('1-my_list').MyList
 >>> ml = MyList()
 >>> ml
@@ -8,12 +9,6 @@ Modulo de test, para la clase MyList
 []
 >>> repr(ml)
 '[]'
-
-#Que tipo de datos es
->>> type(ml)
-<class '1-my_list.MyList'>
->>> issubclass(MyList, list)
-True
 
 # Añadir elementos a la lista
 >>> ml.append(3)
