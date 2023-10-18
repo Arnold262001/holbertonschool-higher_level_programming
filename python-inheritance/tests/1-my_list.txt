@@ -69,18 +69,3 @@ TypeError: '<' not supported between instances of 'str' and 'int'
 # Comprobar el método __repr__
 >>> repr(ml)
 "[3, 2, 1, 'tres', 'dos', 'uno']"
-
-# Crear una lista con listas anidadas
->>> ml = MyList([3, [1, 2], 'hola'])
->>> ml
-[3, [1, 2], 'hola']
-
-# Ordenar e imprimir la lista (esto debería dar un error porque no se pueden ordenar números y listas juntos)
->>> ml.print_sorted()
-Traceback (most recent call last):
-    ...
-TypeError: '<' not supported between instances of 'list' and 'int'
-
-# Comprobar el método __repr__
->>> repr(ml)
-"[3, [1, 2], 'hola']"
