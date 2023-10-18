@@ -3,6 +3,12 @@
 >>> ml
 []
 
+#Que tipo de datos es
+>>> type(ml)
+<class '1-my_list.MyList'>
+>>> issubclass(MyList, list)
+True
+
 # Añadir elementos a la lista
 >>> ml.append(3)
 >>> ml.append(1)
