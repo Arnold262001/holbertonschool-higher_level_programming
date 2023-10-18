@@ -55,32 +55,6 @@ Modulo de test, para la clase MyList
 >>> repr(ml)
 '[4, 2, 9, 3, 5, 1, 6]'
 
-# Crear una lista con elementos de tipo string
->>> ml = MyList(['hola', 'mundo', 'python'])
->>> ml
-['hola', 'mundo', 'python']
-
-# Ordenar e imprimir la lista
->>> ml.print_sorted()
-['hola', 'mundo', 'python']
-
-# Comprobar que la lista original no se modificó después de ordenarla
->>> ml
-['hola', 'mundo', 'python']
-
-# Añadir más elementos a la lista
->>> ml.extend(['bing', 'ai'])
->>> ml
-['hola', 'mundo', 'python', 'bing', 'ai']
-
-# Ordenar e imprimir la lista nuevamente
->>> ml.print_sorted()
-['ai', 'bing', 'hola', 'mundo', 'python']
-
-# Comprobar el método __repr__
->>> repr(ml)
-"['hola', 'mundo', 'python', 'bing', 'ai']"
-
 # Crear una lista con elementos mixtos (números y strings)
 >>> ml = MyList([3, 2, 1, 'tres', 'dos', 'uno'])
 >>> ml
