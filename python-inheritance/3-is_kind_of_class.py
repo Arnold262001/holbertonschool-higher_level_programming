@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Este módulo contiene la función para verificar una objeto 
+Este módulo contiene la función para verificar una objeto
 pertenece a una clase o a heredado de una clase.
 """
 
