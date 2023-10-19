@@ -6,7 +6,7 @@ Traceback (most recent call last):
     ...
 TypeError: edad must be an integer
 
->>>  bg.integer_validator('edad', -6)
+>>> bg.integer_validator('edad', -6)
 Traceback (most recent call last):
     ...
 ValueError: edad must be greater than 0
