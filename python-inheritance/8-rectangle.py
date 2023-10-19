@@ -3,6 +3,8 @@
 Este modulo definea una clase vacia.
 """
 
+
+"""Importa la clase BaseGeometry del módulo 7-base_geometry"""
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
