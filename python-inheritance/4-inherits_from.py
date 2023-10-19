@@ -18,5 +18,9 @@ def inherits_from(obj, a_class):
 
     Returns:
         bool (True): Caso verdadero,False caso contrario.
-        """
-    return isinstance(obj, a_class)
+    #     """
+
+    if issubclass(type(obj), a_class):
+        if isinstance(obj, a_class):
+            return True
+    return False
