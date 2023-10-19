@@ -1,3 +1,6 @@
+Este archivo contiene los test para la clase BaseGeometry
+
+
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 >>> bg = BaseGeometry()
 >>> bg.integer_validator('edad', 18)
