@@ -96,3 +96,5 @@ TypeError: BaseGeometry() takes no arguments
 Traceback (most recent call last):
     ...
 TypeError: verdadero must be an integer
+
+>>> bg.integer_validator(8, 8)
