@@ -107,3 +107,9 @@ TypeError: BaseGeometry() takes no arguments
 Traceback (most recent call last):
     ...
 TypeError: lista invalida must be an integer
+
+>>> bg.integer_validator('tupla?', (4))
+>>> bg.integer_validator('otra tupla?', (4,))
+Traceback (most recent call last):
+    ...
+TypeError: otra tupla? must be an integer
