@@ -8,8 +8,8 @@ sobre un archivo
 def write_file(filename="", text=""):
     """
     Esta función sobreescribe una archivo,
-    si no existe lo crea.
-    
+    si no existe lo crea. 
+
     Args:
         filename (string): Ruta del archivo.
         text (string): Texto a escribir.
