@@ -17,10 +17,6 @@ def inherits_from(obj, a_class):
         o una tupla con la clases.
 
     Returns:
-        bool (True): Caso verdadero,False caso contrario.
+        bool: True caso verdadero,False caso contrario.
     #     """
-
-    if issubclass(type(obj), a_class):
-        if isinstance(obj, a_class):
-            return True
-    return False
+    return issubclass(type(obj), a_class) and type(obj) != a_class
