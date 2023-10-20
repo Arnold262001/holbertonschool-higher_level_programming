@@ -20,7 +20,6 @@ Traceback (most recent call last):
 ValueError: altura must be greater than 0
 
 >>> bg.integer_validator('peso', 75)
-
 >>> bg.integer_validator('peso', 0)
 Traceback (most recent call last):
     ...
@@ -37,14 +36,12 @@ Traceback (most recent call last):
 TypeError: edad must be an integer
 
 >>> bg.integer_validator('ancho', 100)
-
 >>> bg.integer_validator('ancho', 0)
 Traceback (most recent call last):
     ...
 ValueError: ancho must be greater than 0
 
 >>> bg.integer_validator('largo', 200)
-
 >>> bg.integer_validator('largo', -1)
 Traceback (most recent call last):
     ...
@@ -90,3 +87,8 @@ TypeError: area() takes 1 positional argument but 2 were given
 Traceback (most recent call last):
     ...
 TypeError: BaseGeometry() takes no arguments
+
+>>> bg.integer_validator('verdadero', True)
+Traceback (most recent call last):
+    ...
+TypeError: verdadero must be an integer
