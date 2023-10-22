@@ -1,4 +1,4 @@
-#!/usr/python3
+#!/usr/bin/python3
 """
 Este módulo define  la función
 load_from_file, para convertir string Json a objeto python.
