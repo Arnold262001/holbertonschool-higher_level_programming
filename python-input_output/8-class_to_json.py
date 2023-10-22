@@ -17,5 +17,6 @@ def class_to_json(obj):
             de la instancia de clase recibida.
     Nota:
         También se puede la función vars() para regresar un diccionario
+        obj.__dict__
     """
     return vars(obj)
