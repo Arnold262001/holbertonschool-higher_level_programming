@@ -31,11 +31,6 @@ class Student:
             dict: Regresa un diccionario con los atributos
                 de instancia.
         """
-        if attrs:
-            if all(True if type(a) == str else False for a in attrs):
-                temp_dict = dict()
-                for k in self.__dict__.keys():
-                    if k in attrs:
-                        temp_dict[k] = self.__dict__[k]
-                return temp_dict
+        if isinstance(attrs, list) and all(isinstance(a, str) for a in attrs):
+            return {k: v for k, v in self.__dict__.items() if k in attrs}
         return self.__dict__
