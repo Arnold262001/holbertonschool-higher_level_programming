@@ -18,5 +18,4 @@ def load_from_json_file(filename):
         obj: Regresa un objeto de python.
     """
     with open(filename, 'r') as fr:
-        content = fr.read()
-        return json.loads(content)
+        return json.load(fr)
