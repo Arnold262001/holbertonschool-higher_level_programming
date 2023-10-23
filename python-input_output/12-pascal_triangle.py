@@ -1,5 +1,18 @@
 #!/usr/bin/python3
+"""
+Este módulo define la función pascal_triangle.
+"""
+
+
 def pascal_triangle(n):
+    """
+    Esta función regresa el triángulo de pascal.
+
+    Args:
+        n (int): Número de filas en el triángulo.
+    Returns:
+        list: Regresa una lista de lista con el triángulo.
+    """
     if n <= 0:
         return []
 
