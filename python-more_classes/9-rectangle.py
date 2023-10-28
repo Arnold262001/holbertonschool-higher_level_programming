@@ -8,7 +8,6 @@ class Rectangle:
     """
     Esta clase define un rectángulo
     """
-
     number_of_instances = 0
     print_symbol = '#'
 
@@ -106,10 +105,9 @@ class Rectangle:
         """
         if self.__height == 0 or self.__width == 0:
             return ""
-        else:
-            return ''.join(
-                [f"{str(Rectangle.print_symbol) * self.__width}\n"
-                 for i in range(self.__height + 1) if i])[:-1]
+        return ''.join(
+            [f"{str(Rectangle.print_symbol) * self.__width}\n"
+                for i in range(self.__height + 1) if i])[:-1]
 
     def __repr__(self):
         """
@@ -124,7 +122,6 @@ class Rectangle:
         """
         Este método imprime un mensaje al eliminar la instancia de Rectangle
         """
-
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
 
@@ -144,7 +141,6 @@ class Rectangle:
         Returns:
             rect_1: Retorna la instancia con mayor área.
         """
-
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
 
