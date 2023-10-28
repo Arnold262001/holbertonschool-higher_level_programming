@@ -109,9 +109,9 @@ class Rectangle:
         else:
             a = self.__height + 1
             b = self.__width
-            str_repr = ''.join(
-                [f"{str(Rectangle.print_symbol) * b}\n" for i in range(a) if i])
-            return str_repr[:len(str_repr) - 1]
+            s = Rectangle.print_symbol
+            return ''.join(
+                [f"{str(s) * b}\n" for i in range(a) if i])[:-1]
 
     def __repr__(self):
         """
@@ -153,12 +153,9 @@ class Rectangle:
         if not isinstance(rect_2, Rectangle):
             raise TypeError("rect_2 must be an instance of Rectangle")
 
-        if rect_1.area() == rect_2.area():
+        if rect_1.area() >= rect_2.area():
             return rect_1
-        elif rect_1.area() > rect_2.area():
-            return rect_1
-        else:
-            return rect_2
+        return rect_2
 
     @classmethod
     def square(cls, size=0):
