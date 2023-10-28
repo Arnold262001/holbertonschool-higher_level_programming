@@ -25,50 +25,6 @@ class Rectangle:
 
         Rectangle.number_of_instances += 1
 
-    def __str__(self):
-        """
-        Este método representa un string de Rectángulo
-
-        Returns:
-            str: Regresa un rectángulo con el #.
-        """
-        if self.__height == 0 or self.__width == 0:
-            return ""
-        else:
-            a = self.__height + 1
-            b = self.__width
-            str_repr = ''.join(
-                [f"{str(self.print_symbol) * b}\n" for i in range(a) if i])
-            return str_repr[:len(str_repr) - 1]
-
-    def __repr__(self):
-        """
-        Este método mágico regresa una representación del rectángulo
-
-        Returns:
-            string: Cadena que represanta el rectángulo
-        """
-        return f"Rectangle({self.__width}, {self.__height})"
-
-    def __del__(self):
-        """
-        Este método imprime un mensaje al eliminar la instancia de Rectangle
-        """
-
-        Rectangle.number_of_instances -= 1
-        print("Bye rectangle...")
-
-    @classmethod
-    def square(cls, size=0):
-        """
-        Este método crea una nueva instancia de la clase Rectangle
-
-        Args:
-            size (int): Este valor se asignará como parámetros para
-                        nuestra instancia.
-        """
-        return cls(size, size)
-
     @property
     def width(self):
         """
@@ -141,6 +97,39 @@ class Rectangle:
             return 0
         return self.__height * 2 + self.__width * 2
 
+    def __str__(self):
+        """
+        Este método representa un string de Rectángulo
+
+        Returns:
+            str: Regresa un rectángulo con el #.
+        """
+        if self.__height == 0 or self.__width == 0:
+            return ""
+        else:
+            a = self.__height + 1
+            b = self.__width
+            str_repr = ''.join(
+                [f"{str(Rectangle.print_symbol) * b}\n" for i in range(a) if i])
+            return str_repr[:len(str_repr) - 1]
+
+    def __repr__(self):
+        """
+        Este método mágico regresa una representación del rectángulo
+
+        Returns:
+            string: Cadena que represanta el rectángulo
+        """
+        return f"{self.__class__.__name__}({self.__width}, {self.__height})"
+
+    def __del__(self):
+        """
+        Este método imprime un mensaje al eliminar la instancia de Rectangle
+        """
+
+        Rectangle.number_of_instances -= 1
+        print("Bye rectangle...")
+
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """
@@ -164,7 +153,22 @@ class Rectangle:
         if not isinstance(rect_2, Rectangle):
             raise TypeError("rect_2 must be an instance of Rectangle")
 
-        if rect_1.area() >= rect_2.area():
+        if rect_1.area() == rect_2.area():
+            return rect_1
+        elif rect_1.area() > rect_2.area():
             return rect_1
         else:
             return rect_2
+
+    @classmethod
+    def square(cls, size=0):
+        """
+        Este método regresa una nueva instancia,
+        inicializado tanto width y height con el valor size.
+
+        Args:
+            size (int): Valor que se asignará a width y height
+        Returns:
+            object (Rectangle): Nueva instancia inicializada.
+        """
+        return cls(size, size)
