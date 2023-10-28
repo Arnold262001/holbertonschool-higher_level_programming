@@ -19,8 +19,8 @@ class Rectangle:
             width (int): Ancho del rectángulo.
             height (int): Alto del rectángulo
         """
-        self.height = height
         self.width = width
+        self.height = height
 
         Rectangle.number_of_instances += 1
 
