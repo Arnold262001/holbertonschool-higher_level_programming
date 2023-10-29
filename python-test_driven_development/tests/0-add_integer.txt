@@ -63,6 +63,11 @@ Test con Exception:
         ...
     TypeError: b must be an integer
 
+    >>> add_integer(float('NaN'), 4)
+    Traceback (most recent call last):
+        ...
+    ValueError: cannot convert float NaN to integer
+
 Test con números infinitos:
 
     >>> add_integer(float('inf'), float('inf'))

@@ -23,4 +23,4 @@ def add_integer(a, b=98):
     for k, v in n.items():
         if not isinstance(v, (int, float)):
             raise TypeError(f"{k} must be an integer")
-    return int(n['a']) + int(n['b'])
+    return int(a) + int(b)
