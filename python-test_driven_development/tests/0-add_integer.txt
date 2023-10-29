@@ -1,3 +1,12 @@
+El módulo ``0-add_integer``
+=================================
+
+Usando la función ``add_integer``
+---------------------------------
+
+Este un archivo de pruebas, en modo interactivo.
+Empezamos importando ``add_integer`` del modulo ``0-add_integer``:
+
 >>> add_integer = __import__('0-add_integer').add_integer
 
 >>> add_integer(4, 9)

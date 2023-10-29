@@ -18,12 +18,9 @@ def add_integer(a, b=98):
     Returns:
         int: return a + b
     """
+    n = dict(a=a, b=b)
 
-    if a is None or (type(a) is not int and type(a) is not float):
-        raise TypeError("a must be an integer")
-    if type(b) is not int and type(b) is not float:
-        raise TypeError("b must be an integer")
-    result = a + b
-    if result == float('inf') or result == -float('inf'):
-        return 89
+    for k, v in n.items():
+        if not isinstance(v, (int, float)):
+            raise TypeError(f"{k} must be an integer")
     return int(a) + int(b)
