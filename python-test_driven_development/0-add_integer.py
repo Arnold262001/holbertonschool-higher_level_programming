@@ -21,6 +21,6 @@ def add_integer(a, b=98):
     n = dict(a=a, b=b)
 
     for k, v in n.items():
-        if v is None or (not isinstance(v, (int, float))):
+        if not isinstance(v, (int, float)):
             raise TypeError(f"{k} must be an integer")
     return int(n['a']) + int(n['b'])
