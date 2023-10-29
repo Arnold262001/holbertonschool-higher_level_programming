@@ -26,3 +26,42 @@ Comprobando con tipos int y float:
 
     >>> matrix_divided(m, 2.5)
     [[0.6, 0.8, 3.2], [1.6, 20.0, 1.44]]
+
+    >>> list_num = [[1, 2, 3], [4, 5, 8, 6], [25, 2]]
+    >>> matrix_divided(list_num, 2)
+    Traceback (most recent call last):
+        ...
+    TypeError: Each row of the matrix must have the same size
+
+Comprobando con listas vacias:
+
+    >>> list_empty = []
+    >>> matrix_divided(list_empty, 2)
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    >>> list_empty = [[]]
+    >>> matrix_divided(list_empty, 2)
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Comprobando con otro tipo de datos:
+
+    >>> tipo_diccionario = dict(num1 = 15, num2 = 2)
+    >>> matrix_divided(tipo_diccionario, 2)
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    >>> matrix_divided(None, None)
+    Traceback (most recent call last):
+        ...
+    TypeError: 'NoneType' object is not iterable
+
+    >>> matrix = [[1, 2, '3'], [4, '5', 6], [5, 8, 9]]
+    >>> matrix_divided(matrix, 2)
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats

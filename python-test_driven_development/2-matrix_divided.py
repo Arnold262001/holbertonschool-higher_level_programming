@@ -21,8 +21,8 @@ def matrix_divided(matrix, div):
     Returns:
         new_list ([[]])
     """
-    MSG_TYPERROR_LIST = "matrix must be a matrix \
-                        (list of lists) of integers/floats"
+    MSG_TYPERROR_LIST = "matrix must be a matrix (list of lists)" \
+                        " of integers/floats"
     MSG_ERROR_SIZE_LIST = "Each row of the matrix must have the same size"
     MSG_TYPERROR_DIV = "div must be a number"
     MSG_ZEROERROR_DIV = "division by zero"
@@ -33,11 +33,13 @@ def matrix_divided(matrix, div):
 
     # Comprueba que todos que matrix sea una lista, y cada  item tbm lo sea.
     if not all(is_list_of_list):
-        raise TypeError(
-            MSG_TYPERROR_LIST)
+        raise TypeError(MSG_TYPERROR_LIST)
+
+    if all([len(m) == 0 for m in matrix]):
+        raise TypeError(MSG_TYPERROR_LIST)
 
     # Comprueba que cada item dentro de la lista de lista sea un int u float.
-    if not all([[isinstance(i, (int, float)) for i in m]for m in matrix]):
+    if not all([all([isinstance(i, (int, float)) for i in m])for m in matrix]):
         raise TypeError(MSG_TYPERROR_LIST)
 
     # Comprueba que cada lista dentro de lista tenga el mismo tamaño.
