@@ -14,7 +14,8 @@ def matrix_divided(matrix, div):
         div (int || float): Será el divisor de cada item dentro matrix.
     Raises:
         TypeError : Sí matrix no es lista de lista con int o float.
-        TypeError (len(matrix[i])): Sí cada lista interna tiene un tamaño distinto.
+        TypeError (len(matrix[i])): Sí cada lista interna tiene un
+                    tamaño distinto.
         TypeError (div != int | float):Sí div no es un int o float
         ZeroDivisionError (div == 0) : Sí div es 0.
     Returns:
