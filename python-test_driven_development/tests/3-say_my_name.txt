@@ -29,8 +29,8 @@ Comprobando con casos regulares:
     >>> say_my_name("", "Escriba")
     My name is  Escriba
 
-    >>> name = ''
-    >>> last_name = ''
+    >>> name = ""
+    >>> last_name = ""
     >>> say_my_name(name, last_name)
     My name is  
 
@@ -50,8 +50,11 @@ Comprabando con otros tipo de datos:
     Traceback (most recent call last):
         ...
     TypeError: first_name must be a string
+<<<<<<< HEAD
 
     >>> say_my_name()
     Traceback (most recent call last):
         ...
     TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+=======
+>>>>>>> a113ebcc9b7a3ce2e2687f12507560cc24f5d68d
