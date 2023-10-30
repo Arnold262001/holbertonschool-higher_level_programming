@@ -25,4 +25,5 @@ def print_square(size):
         raise TypeError("size must be an integer")
     if size < 0:
         raise ValueError("size must be >= 0")
-    print("".join([f"{'#' * size}\n" for i in range(size + 1) if i])[:-1])
+    if size > 0:
+        print("".join([f"{'#' * size}\n" for i in range(size)])[:-1])
