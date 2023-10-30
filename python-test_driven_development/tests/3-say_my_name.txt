@@ -29,6 +29,9 @@ Comprobando con casos regulares:
     >>> say_my_name("", "Escriba")
     My name is  Escriba
 
+    >>> say_my_name("", "")
+    My name is  
+
 Comprabando con otros tipo de datos:
 
     >>> say_my_name(None)
