@@ -29,6 +29,9 @@ def text_indentation(text):
 
     if not isinstance(text, str):
         raise TypeError("text must be a string")
+
+    text = " ".join(text.split())
+
     for i in character:
         text = text.replace(i[0], i[1])
     print(text, end="")
