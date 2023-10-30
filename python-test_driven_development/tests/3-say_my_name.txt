@@ -29,8 +29,8 @@ Comprobando con casos regulares:
     >>> say_my_name("", "Escriba")
     My name is  Escriba
 
-    >>> name = ''
-    >>> last_name = ''
+    >>> name = ""
+    >>> last_name = ""
     >>> say_my_name(name, last_name)
     My name is  
 
